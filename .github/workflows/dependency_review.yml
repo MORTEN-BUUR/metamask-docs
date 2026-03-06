@@ -19,6 +19,6 @@ jobs:
       - uses: actions/checkout@v5
 
       - name: Dependency review
-        uses: ConsenSys/github-actions/js-dependency-review@main
+        uses: ConsenSys/github-actions/js-dependency-review@976c8355ac860cb5421f5b4c405f2de10edf444d # main
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
