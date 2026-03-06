@@ -16,4 +16,4 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Trivy Cache
-        uses: ConsenSys/github-actions/trivy-update-cache@main
+        uses: ConsenSys/github-actions/trivy-update-cache@976c8355ac860cb5421f5b4c405f2de10edf444d # main
