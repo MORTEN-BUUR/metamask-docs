@@ -43,14 +43,14 @@
     "@metamask/design-tokens": "^7.1.0",
     "@metamask/eth-sig-util": "^7.0.3",
     "@metamask/profile-sync-controller": "^27.1.0",
-    "@metamask/sdk": "^0.32.0",
+    "@metamask/sdk": "^0.33.1",
     "@rjsf/core": "^5.24.12",
     "@rjsf/utils": "^5.24.12",
     "@rjsf/validator-ajv8": "^5.24.12",
     "@sentry/browser": "^8.51.0",
     "@types/react": "^18.3.3",
     "clsx": "^2.1.1",
-    "docusaurus-plugin-sass": "^0.2.5",
+    "docusaurus-plugin-sass": "^0.2.6",
     "dotenv": "^17.2.1",
     "ethers": "^6.13.5",
     "js-cookie": "^3.0.5",
@@ -96,7 +96,9 @@
       "react": "^18.0.0",
       "react-dom": "^18.0.0"
     },
-    "fast-xml-parser@<=5.3.8": "5.3.8"
+    "fast-xml-parser@<=5.3.8": "5.3.8",
+    "markdown-to-jsx@<=9.0.0": "9.0.0",
+    "webpack-dev-server@<=5.2.1": "5.2.1"
   },
   "browserslist": {
     "production": [
