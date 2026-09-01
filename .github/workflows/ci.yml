@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Build
-        uses: ConsenSys/github-actions/docs-build@main
+        uses: ConsenSys/github-actions/docs-build@3a2429772a5d3653f0662a6a66299cad96e74196 # main
 
   case:
     name: Check for case being inconsistent
@@ -32,7 +32,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Case check action
-        uses: ConsenSys/github-actions/docs-case-check@main
+        uses: ConsenSys/github-actions/docs-case-check@3a2429772a5d3653f0662a6a66299cad96e74196 # main
         with:
           DOC_DIR: ${{ matrix.folder }}
           SKIP_TEST: true
@@ -43,7 +43,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Lint
-        uses: ConsenSys/github-actions/docs-lint-all@main
+        uses: ConsenSys/github-actions/docs-lint-all@3a2429772a5d3653f0662a6a66299cad96e74196 # main
 
   spelling:
     name: Spelling
@@ -54,7 +54,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Vale
-        uses: Consensys/github-actions/docs-spelling-check@main
+        uses: Consensys/github-actions/docs-spelling-check@3a2429772a5d3653f0662a6a66299cad96e74196 # main
         with:
           FILEPATHS: 'snaps,services,wallet,developer-tools,docs'
 
@@ -67,6 +67,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: LinkCheck
-        uses: ConsenSys/github-actions/docs-link-check@main
+        uses: ConsenSys/github-actions/docs-link-check@3a2429772a5d3653f0662a6a66299cad96e74196 # main
         with:
           FILE_EXTENSION: ${{ matrix.file-extensions }}
